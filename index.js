@@ -5,7 +5,7 @@ nescrito.addEventListener("input", obtenerResultadoAjax);
 function obtenerResultadoAjax() {
   let numero = nescrito.value;
   let xhr = new XMLHttpRequest();
-  xhr.open("GET", "http://numbersappi.com/" + numero);
+  xhr.open("GET", "http://numbersapi.com/" + numero);
 
   xhr.onload = function() {
     if (this.status == 200 && numero != "") {
